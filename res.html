@@ -219,7 +219,7 @@
         message += `• ${item.name} - Q${item.price.toFixed(2)}%0A`;
       });
       const totalPrice = cart.reduce((sum, i) => sum + i.price, 0);
-      message += `%0ATotal: Q${totalPrice.toFixed(2)}%0A%0AGracias por tu compra.`;
+      message += `%0ATotal: Q${totalPrice.toFixed(2)}%0A%0AGracias por tu compra, en breve un represetante e comunicara con tu persona.`;
 
       const url = `https://wa.me/${whatsappNumber}?text=${message}`;
       window.open(url, "_blank");
